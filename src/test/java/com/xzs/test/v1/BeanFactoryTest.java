@@ -15,6 +15,7 @@ public class BeanFactoryTest {
         BeanDefinition bd = factory.getBeanDefinition("petStore");
         assertEquals("com.xzs.service.v1.PetStoreService",bd.getBeanClassName());
         PetStoreService petStore = (PetStoreService)factory.getBean("petStore");
+
         assertNotNull(petStore);
     }
 }
